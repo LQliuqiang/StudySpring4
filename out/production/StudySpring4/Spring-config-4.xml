@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       xmlns:p="http://www.springframework.org/schema/p">
+
+    <!--
+   01. 静态工厂方法使用 通过静态工厂方法来配置bean(注意不是配置静态工厂方法实例，而是配置bean实例)
+    -->
+    <bean id="car1" class="com.lq.s1.s8.StaticCarFactory"
+    factory-method="getCar">
+        <constructor-arg value="baoMa"/>
+    </bean>
+
+    <!--
+    02.实例工厂方法使用  factory-bean指向实例工厂方法的bean
+    -->
+    <!--先配置工厂的实例-->
+    <bean id="carFactory" class="com.lq.s1.s8.InstanceCarFactory"/>
+    <!--通过实例工厂方法来配置bean-->
+    <bean id="car2" factory-bean="carFactory" factory-method="getCar">
+        <constructor-arg value="benChi"/>
+    </bean>
+
+    <!--
+    03.使用spring提供的FactoryBean接口
+    -->
+    <bean id="car3" class="com.lq.s1.s8.CarFactory" p:type="BMW"/>
+</beans>

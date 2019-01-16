@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       xmlns:p="http://www.springframework.org/schema/p">
+
+    <!--
+   01. bean的生命周期  init-method  destroy-method
+    -->
+    <bean id="login" class="com.lq.s1.s7.Login" init-method="init" destroy-method="destroy"
+          p:userName="liuqiang" p:password="123456"/>
+
+    <!--可以不配置这个-->
+    <bean class="com.lq.s1.s7.MyBeanPostProcessor"/>
+
+</beans>

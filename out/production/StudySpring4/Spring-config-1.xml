@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       xmlns:p="http://www.springframework.org/schema/p">
+
+    <!--
+   01. 自动装配 在实际开发中，很少使用自动装配，缺点明显，一般用在整合一些框架的时候会用到一些
+    -->
+
+    <bean id="address4" class="com.lq.s1.s4.Address" p:city="九江" p:street="866"/>
+
+    <bean id="family" class="com.lq.s1.s4.Family" p:familyName="刘家">
+        <property name="familyPresons">
+            <list>
+                <value>刘幼华</value>
+                <value>柯小桃</value>
+                <value>刘菲菲</value>
+            </list>
+        </property>
+    </bean>
+
+    <!--正常使用-->
+    <!--<bean id="person" class="com.lq.s1.autowire.Person" p:name="刘强" p:address-ref="address" p:family-ref="family"/>-->
+
+    <!--根据属性名称自动装配-->
+    <bean id="person" class="com.lq.s1.s4.Person" p:name="刘强" autowire="byName"/>
+    <!--更具属性的类型装配：无法使用在与多个相同的构造装配-->
+    <!--<bean id="person" class="com.lq.s1.autowire.Person" p:name="刘强" autowire="byType"/>-->
+
+    <!--
+    02.bean继承 使用bean的parent属性 继承bean的配置
+
+    1.父类的bean可以作为一个配置模板（添加abstract="true"属性），不能被IOC所实例化，同时可以忽略bean的class属性
+    2.子类的bean可以覆盖父bean的属性值
+    -->
+    <bean id="addressParent" class="com.lq.s1.s4.Address" p:city="深圳" p:street="888"/>
+    <!--<bean id="addressChild" class="com.lq.s1.autowire.Address" p:city="深圳" p:street="888999"/>-->
+    <bean id="addressChild" parent="addressParent" p:street="888999"/>
+
+    <!--
+    03.要求配置person2的时候，必须要依赖与car这个bean对象    使用depends-on这个属性依赖
+    -->
+    <bean id="person2" class="com.lq.s1.s4.Person" p:name="刘强" p:address-ref="address4" p:family-ref="family"
+          depends-on="car"/>
+
+    <bean id="car" class="com.lq.s1.s2.Car" p:type="保时捷" p:price="1300000"/>
+
+    <!--
+    04.bean的默认作用域是单例的，我们可以修改它的作用域 使用scope来指定作用域
+    scope为prototype：每次使用IOC获取的bean对象会是一个新的对象；只有对象使用的时候才开始被创建。
+    scope为singleton(默认): 对象始终是一样的; IOC容器初始化时就创建的bean对象。
+    -->
+    <bean id="myAddress" class="com.lq.s1.s4.Address" p:city="深圳" p:street="123456789" scope="prototype"/>
+</beans>

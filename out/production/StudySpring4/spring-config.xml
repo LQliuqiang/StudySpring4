@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:p="http://www.springframework.org/schema/p">
+
+    <!--01.使用set方法配置
+    配置HollowWord对象：其实就是利用反射的方式有Spring（全类名com.lq.s1.HollowWord）创建这个对象,所以只能是无参构造
+    -->
+    <bean id="hollowWord" class="com.lq.s1.HollowWord">
+        <property name="name" value="liuqiang"/>
+    </bean>
+
+    <!--02.使用构造方法配置-->
+    <bean id="user" class="com.lq.s1.User">
+        <constructor-arg index="0" value="liuqiang"/>
+        <constructor-arg index="1" value="男"/>
+        <constructor-arg index="2" value="23"/>
+    </bean>
+
+    <!--说明调用不同的构造器 不仅可以用index区分执行参数 也可以用类型type区分指定的参数类型  来区分重载的构造器-->
+    <bean id="user2" class="com.lq.s1.User">
+        <constructor-arg index="0" value="liuqiang"/>
+        <constructor-arg index="1" value="男"/>
+        <constructor-arg index="2" value="24" type="double"/>
+    </bean>
+
+    <!--
+    03.如果字面值里面含有特殊字符 可以使用<![CDATA[字面值]]>
+    -->
+    <bean id="user3" class="com.lq.s1.User">
+        <!--<constructor-arg index="0" value="<liuqiang>"/> 这样写是错误的-->
+        <constructor-arg index="0">
+            <value><![CDATA[<liuqiang>]]></value>
+        </constructor-arg>
+        <constructor-arg index="1" value="男"/>
+        <constructor-arg index="2" value="24" type="double"/>
+    </bean>
+
+    <!--
+    04.Person类中嵌套Car属性  使用ref属性去引用
+    -->
+    <bean id="person" class="com.lq.s1.s2.Person">
+        <property name="name" value="刘强"/>
+        <property name="age" value="23"/>
+        <property name="salary" value="10000"/>
+        <!--引用外部bean-->
+        <!--<property name="car" ref="outCar"/>-->
+        <!--<property name="car">-->
+        <!--<ref bean="car" />-->
+        <!--</property>-->
+        <!--内部bean,不能被外部引用，只能在内部使用-->
+        <property name="car">
+            <bean class="com.lq.s1.s2.Car">
+                <property name="type" value="奔驰"/>
+                <property name="price" value="600000"/>
+            </bean>
+        </property>
+    </bean>
+    <!--外部bean-->
+    <bean id="outCar" class="com.lq.s1.s2.Car">
+        <property name="type" value="宝马"/>
+        <property name="price" value="700000"/>
+    </bean>
+
+    <bean id="person2" class="com.lq.s1.s2.Person">
+        <constructor-arg name="name" value="刘菲菲"/>
+        <constructor-arg name="age" value="15"/>
+        <!--给属性car传值为null值-->
+        <!--<constructor-arg><null/></constructor-arg>-->
+        <!--修改outCar中type的属性值-->
+        <constructor-arg ref="outCar"/>
+        <property name="car.type" value="上海大众"/>
+    </bean>
+
+    <!--
+    05.Person类中嵌套List<Car>属性  [数组，set定义都与List相似]
+    -->
+    <bean name="myPerson" class="com.lq.s1.s2.MyPerson">
+        <property name="name" value="LQ"/>
+        <property name="age" value="30"/>
+        <property name="cars">
+            <list>
+                <ref bean="firstCar"/>
+                <ref bean="secondCar"/>
+                <ref bean="threeCar"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="firstCar" class="com.lq.s1.s2.Car">
+        <property name="type" value="丰田汽车"/>
+        <property name="price" value="150000"/>
+    </bean>
+    <bean id="secondCar" class="com.lq.s1.s2.Car">
+        <property name="type" value="宝马汽车"/>
+        <property name="price" value="750000"/>
+    </bean>
+    <bean id="threeCar" class="com.lq.s1.s2.Car">
+        <property name="type" value="奔驰汽车"/>
+        <property name="price" value="850000"/>
+    </bean>
+
+    <!--
+      06.NewPerson类中嵌套Map<String,Car>属性
+    -->
+    <bean id="newPerson" class="com.lq.s1.s2.NewPerson">
+        <property name="name" value="刘强"/>
+        <property name="age" value="26"/>
+        <property name="carMap">
+            <map>
+                <entry key="AA" value-ref="firstCar"/>
+                <entry key="BB" value-ref="secondCar"/>
+            </map>
+        </property>
+    </bean>
+
+    <!--
+    07.Properties属性的配置
+    -->
+    <bean id="dataSource" class="com.lq.s1.s3.DataSource">
+        <property name="properties">
+            <props>
+                <prop key="user">root</prop>
+                <prop key="password">123</prop>
+                <prop key="jdbcUrl">jdbc:mysql:///test</prop>
+                <prop key="driverClass">com.mysql.jdbc.Driver</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!--
+    【原因：前面的集合属性定义都是定义在内部的 如05中的cars与06中的carMap是不能被其它bean所能使用的，只能买供内部使用】
+    08.配置独立的集合，供多个bean共用
+    -->
+    <bean id="myPerson2" class="com.lq.s1.s2.MyPerson">
+        <property name="name" value="kebe"/>
+        <property name="age" value="39"/>
+        <property name="cars" ref="listCar"/>
+    </bean>
+    <util:list id="listCar">
+        <ref bean="secondCar"/>
+        <ref bean="threeCar"/>
+    </util:list>
+
+    <!--
+    【原因：前面属性的配置太繁琐了】
+    09.使用p命名空间给bean的属性赋值
+    -->
+    <bean id="myPerson3" class="com.lq.s1.s2.MyPerson" p:name="科比" p:age="40" p:cars-ref="listCar"/>
+
+</beans>

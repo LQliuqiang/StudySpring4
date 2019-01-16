@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+http://www.springframework.org/schema/aop http://www.springframework.org/schema/tx/spring-aop.xsd">
+
+
+    <!--如果使用了UserInfoDao，就要添加自动扫描-->
+    <context:component-scan base-package="com.lq.s1.thing2"/>
+
+    <!--导入资源文件-->
+    <context:property-placeholder location="classpath:jdbc1.properties"/>
+
+    <!--配置C3P0数据源-->
+    <bean id="c3dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="user" value="${jdbc.user}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <property name="driverClass" value="${jdbc.driverClass}"/>
+        <property name="jdbcUrl" value="${jdbc.jdbcUrl}"/>
+        <property name="initialPoolSize" value="${jdbc.initialPoolSize}"/>
+        <property name="maxPoolSize" value="${jdbc.maxPoolSize}"/>
+    </bean>
+
+    <!--配置jdbcTemplate-->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="c3dataSource"/>
+    </bean>
+
+    <!--配置bean-->
+    <bean id="bookShopDao" class="com.lq.s1.thing2.BookShopDaoImpl">
+        <property name="jdbcTemplate" ref="jdbcTemplate"/>
+    </bean>
+
+    <bean id="bookShopService" class="com.lq.s1.thing2.serviceImpl.BookShopServiceImpl">
+        <property name="bookShopDao" ref="bookShopDao"/>
+    </bean>
+
+    <bean id="buyBook" class="com.lq.s1.thing2.serviceImpl.BuyBookImpl">
+        <property name="bookShopService" ref="bookShopService"/>
+    </bean>
+
+    <!--1.配置事物管理器-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="c3dataSource"/>
+     </bean>
+
+    <!--2.配置事物属性-->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <!--自定义 指定purchase方法需要开启自己的事物，让父类的事物挂起，也就是屏蔽事物的传播性-->
+            <!-- 解释：默认的情况下当一个人买多本书的时候BuyBook.buy(),如果剩余的钱不足以同时买这几本书，那么是不会购买成功的。
+	 Propagation.REQUIRES_NEW的情况下，剩余的钱能够买几本就买几本，直到剩余的钱不足以买到一本书。-->
+            <tx:method name="purchase" propagation="REQUIRES_NEW"/>
+
+            <!--指定所有方法名之前包括query，get或find的所有方法都仅仅只读，这样能够加快读取效率-->
+            <tx:method name="query*" read-only="true"/>
+            <tx:method name="get*" read-only="true"/>
+            <tx:method name="find*" read-only="true"/>
+
+            <!--默认指定事物对应所有的方法-->
+            <tx:method name="*"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <!--3.配置事物切入点，以及将事物属性与事物切入点关联起来-->
+    <aop:config>
+        <!--定义切入点表达式:在com.lq.s1.thing2.service包下所有接口的所有方法（第一个*标识所有接口，第二个*接口中所有方法）-->
+        <aop:pointcut expression="execution(* com.lq.s1.thing2.service.*.*(..))" id="txPointcut"/>
+        <!--将事物属性与事物切入点关联起来-->
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointcut"/>
+    </aop:config>
+
+</beans>

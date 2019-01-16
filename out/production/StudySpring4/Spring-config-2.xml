@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+       xmlns:context="http://www.springframework.org/schema/context">
+
+    <!--
+   01. 数据库配置链接
+    -->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="user" value="root"/>
+        <property name="password" value="123456"/>
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/mysql"/>
+    </bean>
+
+    <!--02.导入属性文件-->
+    <context:property-placeholder location="classpath:db.properties"/>
+    <bean id="dataSource2" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <!--使用引用的外部文件中的属性 ${属性名}-->
+        <property name="user" value="${user}"/>
+        <property name="password" value="${password}"/>
+        <property name="driverClass" value="${driverClass}"/>
+        <property name="jdbcUrl" value="${jdbcUrl}"/>
+    </bean>
+
+    <!--03.SpEL表达式 #{}-->
+   <bean id="car" class="com.lq.s1.s6.Car">
+       <property name="type" value="奥迪"/>
+       <property name="price" value="500000"/>
+       <!--使用SpEL表达式 引入Math类中的静态属性Math.PI-->
+       <property name="lunTaiZhouChang" value="#{T(java.lang.Math).PI * 80}"/>
+   </bean>
+
+    <bean id="address" class="com.lq.s1.s6.Address">
+          <property name="city" value="北京"/>
+          <property name="street" value="第五街道"/>
+    </bean>
+
+    <bean id="person" class="com.lq.s1.s6.Person">
+        <property name="name" value="刘强"/>
+        <!--使用 SpEL 表达式来引用其它bean的属性-->
+        <property name="street" value="#{address.street}"/>
+        <!--使用 SpEL 表达式来引用其它bean-->
+        <property name="car" value="#{car}"/>
+        <!--使用 SpEL 表达式做运算符-->
+        <property name="info" value="#{car.price>300000?'有钱人':'穷屌丝'}"/>
+    </bean>
+
+
+</beans>

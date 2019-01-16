@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4dfc4e23-def3-448b-ac7e-5500a358f232" name="Default" comment="">
+      <change afterPath="D:/javaProjectServer/corepro-activemq-monitor/src/main/java/corepro/activemq/monitor/ActivemqController.java" afterDir="false" />
+      <change afterPath="D:/javaProjectServer/corepro-activemq-monitor/src/main/java/corepro/activemq/monitor/GlobExceptionHandler.java" afterDir="false" />
+      <change afterPath="D:/javaProjectServer/corepro-activemq-monitor/src/main/java/corepro/activemq/monitor/SpringConfig.java" afterDir="false" />
+      <change afterPath="D:/studyJava/lq-study-springboot/src/main/java/lq/study/springboot/Application.java" afterDir="false" />
+      <change afterPath="D:/studyJava/lq-study-springboot/src/test/java/lq/study/springboot/ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/BeaconCoreproActivemqServer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/src/main/java/cn/beacon/bean/CoreProGwTypeBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/src/main/java/cn/beacon/bean/ProducerMessageBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/src/main/java/cn/beacon/mapper/CoreProGwTypeMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/src/main/java/cn/beacon/rabbit/RmqConsumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/src/main/java/cn/beacon/service/CoreProGwTypeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/src/main/resources/conf/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/src/main/resources/conf/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/src/main/resources/conf/mybatis.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/src/main/resources/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/src/main/resources/mapper/CoreProGwTypeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/classes/cn/beacon/bean/CoreProGwTypeBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/classes/cn/beacon/bean/ProducerMessageBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/classes/cn/beacon/mapper/CoreProGwTypeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/classes/cn/beacon/rabbit/RmqConsumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/classes/cn/beacon/service/CoreProGwTypeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/classes/conf/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/classes/conf/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/classes/conf/mybatis.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/classes/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/classes/mapper/CoreProGwTypeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/amqp-client-5.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/aspectjweaver-1.8.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/c3p0-0.9.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/commons-codec-1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/gson-2.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/http-client-2.0.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/httpclient-4.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/httpcore-4.4.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/jackson-core-2.9.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/jackson-databind-2.9.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/mchange-commons-java-0.2.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/mybatis-3.4.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/mybatis-spring-1.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/mysql-connector-java-5.1.39.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/netty-buffer-4.1.16.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/netty-codec-4.1.16.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/netty-codec-http-4.1.16.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/netty-codec-socks-4.1.16.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/netty-common-4.1.16.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/netty-handler-4.1.16.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/netty-handler-proxy-4.1.16.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/netty-resolver-4.1.16.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/netty-transport-4.1.16.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/netty-transport-native-epoll-4.1.16.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/netty-transport-native-unix-common-4.1.16.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/reactive-streams-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/reactor-core-3.1.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/reactor-netty-0.7.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/spring-amqp-2.0.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/spring-aop-4.3.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/spring-aspects-4.3.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/spring-beans-4.3.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/spring-context-4.3.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/spring-core-4.3.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/spring-expression-4.3.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/spring-jdbc-4.3.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/spring-messaging-5.0.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/spring-rabbit-2.0.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/spring-retry-1.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/spring-tx-4.3.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/spring-web-4.3.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/spring-webflux-5.0.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/lib/spring-webmvc-4.3.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/BeaconCoreproActivemqServer/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/classes/cn/beacon/bean/CoreProGwTypeBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/classes/cn/beacon/bean/ProducerMessageBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/classes/cn/beacon/mapper/CoreProGwTypeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/classes/cn/beacon/rabbit/RmqConsumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/classes/cn/beacon/service/CoreProGwTypeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/classes/conf/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/classes/conf/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/classes/conf/mybatis.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/classes/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconCoreproActivemqServer/target/classes/mapper/CoreProGwTypeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BeaconHttp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/http/BeaconHttp$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/http/BeaconHttp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/http/BeaconHttp$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/http/BeaconHttp$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/http/BeaconHttp$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/http/BeaconHttp$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/http/BeaconHttp$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/http/BeaconHttp$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/http/BeaconHttp$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/http/BeaconHttp$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/http/BeaconHttp$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/http/BeaconHttp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/http/BeaconHttp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/http/achieve/Is2FileTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/http/achieve/Response$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/http/achieve/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/http/achieve/Response.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/json/TestJson.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/json/UserBean$InfoBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/json/UserBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/test/INetService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/test/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/test/Main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/test/Main$3$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/test/Main$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/test/Main$4$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/test/Main$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/test/Main$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/test/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/test/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/test/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/test/ac2/Encrypt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/test/ac2/FamilyOrgBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/test/ac2/OrgId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/test/ac2/RealOrgId$LanguageBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/test/ac2/RealOrgId$OrgBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/test/ac2/RealOrgId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/test/ac2/Token.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeaconHttp/out/production/BeaconHttp/com/beacon/test/ac2/UTC2Date.class" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s9/respository/UserJdbcRespository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s9/respository/IUserRespository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s10/BaseService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s10/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s10/UserRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s10/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s10/BaseRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s9/MyObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s9/Test6.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s9/TestObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="D:/" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/com/lq/s1/retrofit/lqhttp/OkHttpUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/retrofit/Retrofit.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/retrofit/okhttp/OkHttpUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/retrofit/User.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/retrofit/INetLogin.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/retrofit/okhttp/CallBack.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/retrofit/okhttp/OkHttp.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/retrofit/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/retrofit/okhttp/Call.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/retrofit/okhttp/Retrofit.java" />
+        <option value="$PROJECT_DIR$/src/Spring-config-1.xml" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/s9/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/Spring-config-6.xml" />
+        <option value="$PROJECT_DIR$/src/db.properties" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/a1/ArithmeticCalculatorLoggingProxy.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/thing/BookShopDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/jdbc1/User.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/a2/AMain2.java" />
+        <option value="$PROJECT_DIR$/src/Spring-config-a3.xml" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/thing/BookShopServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/thing2/thing/BookShopService.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/thing2/BookShopService.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/thing2/dispense/BuyBookImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/thing2/BookShopDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/thing2/BookShopServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/thing2/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/singlton/Volly.java" />
+        <option value="$PROJECT_DIR$/src/spring-single.xml" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/singlton/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/singlton/OkHttp.java" />
+        <option value="$PROJECT_DIR$/src/spring-config.xml" />
+        <option value="$PROJECT_DIR$/src/Spring-thing2.xml" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/thing3/Main.java" />
+        <option value="$PROJECT_DIR$/src/Spring-thing3.xml" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/thing3/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/thing3/service/BuyBookService.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/thing3/mapper/BookMapper.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/jdbc2/UserInfo.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/jdbc2/DataSourceUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/jdbc2/Main.java" />
+        <option value="$PROJECT_DIR$/src/Spring-config-11.xml" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/s11/UserBean.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/s11/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/s11/MyController.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/jdbc3/UserInfo.java" />
+        <option value="$PROJECT_DIR$/src/Spring-jdbc3.xml" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/jdbc3/CoreProGwTypeBean.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/jdbc3/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/jdbc3/UserController.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/jdbc1/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/lq/s1/TestMain.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="StudySpring4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudySpring4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudySpring4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudySpring4" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudySpring4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudySpring4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudySpring4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudySpring4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="s1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudySpring4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudySpring4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="s1" type="462c0819:PsiDirectoryNode" />
+              <item name="s2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudySpring4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudySpring4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="s1" type="462c0819:PsiDirectoryNode" />
+              <item name="s8" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudySpring4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudySpring4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="s1" type="462c0819:PsiDirectoryNode" />
+              <item name="s9" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudySpring4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudySpring4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="s1" type="462c0819:PsiDirectoryNode" />
+              <item name="s9" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudySpring4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudySpring4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="s1" type="462c0819:PsiDirectoryNode" />
+              <item name="s9" type="462c0819:PsiDirectoryNode" />
+              <item name="respository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudySpring4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudySpring4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="s1" type="462c0819:PsiDirectoryNode" />
+              <item name="s10" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudySpring4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudySpring4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="s1" type="462c0819:PsiDirectoryNode" />
+              <item name="s11" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudySpring4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudySpring4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="s1" type="462c0819:PsiDirectoryNode" />
+              <item name="thing3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudySpring4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudySpring4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="s1" type="462c0819:PsiDirectoryNode" />
+              <item name="thing3" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudySpring4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudySpring4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="s1" type="462c0819:PsiDirectoryNode" />
+              <item name="thing3" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudySpring4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="StudySpring4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="StudySpring4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudySpring4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudySpring4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../StudySpringMVC" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\Administrator\IdeaProjects\StudySpring4\src" />
+      <recent name="D:\Users\Administrator\IdeaProjects\StudySpring4\src\com\lq\s1" />
+      <recent name="D:\Users\Administrator\IdeaProjects\StudySpring4\src\com\lq\s1\thing2" />
+      <recent name="D:\Users\Administrator\IdeaProjects\StudySpring4\src\com\lq\s1\testproxy\http" />
+      <recent name="D:\Users\Administrator\IdeaProjects\StudySpring4\src\com\lq\s1\thing" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lq.s1.jdbc3" />
+      <recent name="com.lq.s1.jdbc2" />
+      <recent name="com.lq.s1.jdbc1" />
+      <recent name="com.lq.s1.testproxy.lqhttp" />
+      <recent name="com.lq.s1.a2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\Administrator\IdeaProjects\StudySpring4\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.TestMain">
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lq.s1.thing3.Main" />
+      <module name="StudySpring4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lq.s1.thing3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lq.s1.jdbc2.Main" />
+      <module name="StudySpring4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lq.s1.jdbc2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lq.s1.jdbc3.Main" />
+      <module name="StudySpring4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lq.s1.jdbc3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lq.s1.s11.Main" />
+      <module name="StudySpring4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lq.s1.s11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lq.s1.TestMain" />
+      <module name="StudySpring4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lq.s1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main (2)" />
+      <item itemvalue="Application.Main (3)" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (4)" />
+      <item itemvalue="Application.TestMain" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestMain" />
+        <item itemvalue="Application.Main (4)" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (3)" />
+        <item itemvalue="Application.Main (2)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4dfc4e23-def3-448b-ac7e-5500a358f232" name="Default" comment="" />
+      <created>1525916994492</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1525916994492</updated>
+      <workItem from="1525917000429" duration="10319000" />
+      <workItem from="1525997461694" duration="6771000" />
+      <workItem from="1526007266426" duration="3697000" />
+      <workItem from="1526016948419" duration="17882000" />
+      <workItem from="1526084849094" duration="10793000" />
+      <workItem from="1526103836485" duration="9628000" />
+      <workItem from="1526115922478" duration="4871000" />
+      <workItem from="1526257142606" duration="11379000" />
+      <workItem from="1526276195681" duration="7224000" />
+      <workItem from="1526290610291" duration="2254000" />
+      <workItem from="1526343075303" duration="1547000" />
+      <workItem from="1526349874423" duration="1792000" />
+      <workItem from="1526455044173" duration="638000" />
+      <workItem from="1526556129981" duration="45000" />
+      <workItem from="1526601991980" duration="1831000" />
+      <workItem from="1526622184059" duration="3904000" />
+      <workItem from="1526689958788" duration="11384000" />
+      <workItem from="1526708295537" duration="9337000" />
+      <workItem from="1526862197840" duration="1248000" />
+      <workItem from="1526880956849" duration="286000" />
+      <workItem from="1527068157691" duration="611000" />
+      <workItem from="1527074666018" duration="230000" />
+      <workItem from="1527120406836" duration="710000" />
+      <workItem from="1527665438583" duration="5299000" />
+      <workItem from="1527749018867" duration="1471000" />
+      <workItem from="1527816818548" duration="3545000" />
+      <workItem from="1527917995313" duration="1398000" />
+      <workItem from="1528098141460" duration="1655000" />
+      <workItem from="1528183195946" duration="1037000" />
+      <workItem from="1528339263336" duration="20000" />
+      <workItem from="1528505983013" duration="874000" />
+      <workItem from="1528514211672" duration="1772000" />
+      <workItem from="1528535221297" duration="2104000" />
+      <workItem from="1528887820790" duration="216000" />
+      <workItem from="1529136495582" duration="647000" />
+      <workItem from="1529892878014" duration="1099000" />
+      <workItem from="1529916039722" duration="34000" />
+      <workItem from="1530012069300" duration="1060000" />
+      <workItem from="1530057994811" duration="93000" />
+      <workItem from="1533716791536" duration="813000" />
+      <workItem from="1533720659648" duration="606000" />
+      <workItem from="1533802396592" duration="4258000" />
+      <workItem from="1534237002258" duration="5375000" />
+      <workItem from="1534291774247" duration="107000" />
+      <workItem from="1534398615290" duration="2851000" />
+      <workItem from="1534466757914" duration="6764000" />
+      <workItem from="1534551134997" duration="3627000" />
+      <workItem from="1534896713336" duration="1450000" />
+      <workItem from="1535340554113" duration="1242000" />
+      <workItem from="1535434800961" duration="334000" />
+      <workItem from="1535444724523" duration="7290000" />
+      <workItem from="1535534812123" duration="316000" />
+      <workItem from="1535536302042" duration="582000" />
+      <workItem from="1535623742112" duration="3525000" />
+      <workItem from="1535674660898" duration="94000" />
+      <workItem from="1535677279034" duration="3241000" />
+      <workItem from="1535682783881" duration="591000" />
+      <workItem from="1535780639589" duration="1380000" />
+      <workItem from="1535792031674" duration="1027000" />
+      <workItem from="1535970249852" duration="1083000" />
+      <workItem from="1536110129269" duration="9000" />
+      <workItem from="1536231827405" duration="4785000" />
+      <workItem from="1536239379192" duration="622000" />
+      <workItem from="1536311244876" duration="592000" />
+      <workItem from="1539737372046" duration="12000" />
+      <workItem from="1541062729747" duration="234000" />
+      <workItem from="1542008637712" duration="3842000" />
+      <workItem from="1542161546662" duration="1256000" />
+      <workItem from="1543216388648" duration="3581000" />
+      <workItem from="1547454512276" duration="649000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="202843000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25488997" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295838" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23059617" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3295838" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3294621" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.3294621" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/jdbc3/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/jdbc2/DataSourceUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/jdbc3/CoreProGwTypeBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/jdbc1/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/jdbc2/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2000">
+          <caret line="85" column="29" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spring-aop-4.3.16.RELEASE.jar!/org/springframework/aop/config/spring-aop-4.3.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="235" column="8" selection-start-line="235" selection-start-column="8" selection-end-line="235" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Spring-config-a3.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/a3/LoggingAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="31" column="53" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/a3/AMain3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/jdbc1/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="88" column="53" selection-start-line="88" selection-start-column="48" selection-end-line="88" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Android/Android Studio/jre/jre/lib/rt.jar!/java/lang/StringBuilder.class" />
+    <entry file="jar://D:/Program Files/Android/Android Studio/jre/jre/lib/rt.jar!/java/lang/AbstractStringBuilder.class" />
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/TestMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spring-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="97" column="44" lean-forward="true" selection-start-line="97" selection-start-column="44" selection-end-line="97" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/a3/ArithmeticCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/a3/ArithmeticCalculatorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/a2/LoggingAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/a2/AMain2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/a1/AMain1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="88" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/a1/ArithmeticCalculatorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/a1/ArithmeticCalculatorLoggingProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1075">
+          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+          <folding>
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/a1/ArithmeticCalculatorLoggingImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s9/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s7/MyBeanPostProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s6/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s6/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s5/Test2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s4/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s4/Family.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s4/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s4/Test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s2/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s2/MyPerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s2/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s2/NewPerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s8/Test5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s8/StaticCarFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s8/CarFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s9/respository/UserRespositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s9/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s9/MyObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s9/Test6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s9/TestObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s9/respository/UserJdbcRespository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s9/respository/IUserRespository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s10/BaseRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s10/BaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s10/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s10/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lq/s1/s10/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
